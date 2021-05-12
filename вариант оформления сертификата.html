@@ -1,50 +1,141 @@
-<!DOCTYPE html
-	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<title>HTML Template</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Варианты оформления сертификата</title>
 	<style>
 		body {
-			width: 100% !important;
-			-webkit-text-size-adjust: 100%;
-			-ms-text-size-adjust: 100%;
 			margin: 0;
-			padding: 0;
-			line-height: 100%;
 		}
 
-		[style*="Open Sans"] {font-family: 'Open Sans', arial, sans-serif !important;}
+		.container {
+			width: 595px;
+			padding: 0 25px;
+			margin: 0 auto;
+		}
 
-		img {
-			outline: none;
-			text-decoration: none;
-			border:none;
-			-ms-interpolation-mode: bicubic;
-			max-width: 100%!important;
-			margin: 0;
-			padding: 0;
-			display: block;
+		.decoration {
+			text-align: center;
 		}
-    
-		table td {
-			border-collapse: collapse;
+
+		.documents {
+			height: 400px;
+			margin-top: 30px;
+			background: url('https://i.ibb.co/5FrCF9H/image.jpg') no-repeat;
+			background-size: contain;
+			background-position: bottom;
 		}
-    
-		table {
-			border-collapse: collapse;
-			mso-table-lspace: 0pt;
-			mso-table-rspace: 0pt;
+
+		.heading {
+			text-align: left;
+			font-weight: bold;
+			font-size: 14px;
+			line-height: 18px;
+			color: #7359BA;
+		}
+
+		.list {
+			display: flex;
+			flex-direction: column;
+		}
+
+		.item {
+			margin-top: 5px;
+			min-height: 26px;
+			padding-left: 35px;
+			text-align: left;
+			font-size: 10px;
+			line-height: 15px;
+		}
+
+		.num1 {
+			background: url('https://i.ibb.co/cTpQpBZ/Group-42619-1.jpg') no-repeat;
+			background-position: left top;
+			background-size: 26px;
+		}
+
+		.num2 {
+			background: url('https://i.ibb.co/mNZksXV/Group-42652.jpg') no-repeat;
+			background-position: left top;
+			background-size: 26px;
+		}
+
+		.num3 {
+			background: url('https://i.ibb.co/C0M9KFG/Group-42653.jpg') no-repeat;
+			background-position: left top;
+			background-size: 26px;
+		}
+
+		.num4 {
+			background: url('https://i.ibb.co/3CqLDxW/Group-42654.jpg') no-repeat;
+			background-position: left top;
+			background-size: 26px;
+		}
+
+		.num5 {
+			background: url('https://i.ibb.co/QcWdXB9/Group-42655.jpg') no-repeat;
+			background-position: left top;
+			background-size: 26px;
+		}
+
+		.num6 {
+			background: url('https://i.ibb.co/B3783dx/Group-42656.jpg') no-repeat;
+			background-position: left top;
+			background-size: 26px;
 		}
 	</style>
 </head>
+<body>
+	<section class="decoration">
+		<div class="container">
+			<img width="595" src="https://i.ibb.co/FBT8DwK/image.jpg" alt="">
+		</div>
+	</section>
 
-<body style="margin: 0; padding: 0;">
-	<div style="font-size:0px;font-color:#ffffff;opacity:0;visibility:hidden;width:0;height:0;display:none;">Тестовое письмо</div>
-	<table cellpadding="0" cellspacing="0" width="100%" bgcolor="#ededed">
-		
-	</table>
+	<section>
+		<div class="container documents" style="text-align: center;">
+			<img style="margin-bottom: 15px;" width="440" src="https://i.ibb.co/Z6T1Mpp/Group-42651.jpg" alt="">
+			<table>
+				<tr style="display: flex;">
+					<td class="list">
+						<div class="heading">Для ООО</div>
+						<div class="item num1">
+							Заявление в формате word с обязательным указанием адреса эл. почты, <span>на которую Вы будете получать всю информацию от Органа сертификации</span> (во вложении): заполняйте любых 3-х контрагентов обязательно!</div>
+						<div class="item num2">
+							Заявление на сертификацию (скан) с печатью организации и подписями (скан заявления п.1)
+						</div>
+						<div class="item num3">
+							Карточка с реквизитами организации (word)
+						</div>
+						<div class="item num4">
+							Приказ (решение) о назначении директора (скан с подписью)
+						</div>
+						<div class="item num5">
+							Свидетельство о постановке на учет
+						</div>
+						<div class="item num6">
+							Устав
+						</div>
+					</td>
+					<td class="list" style="margin-left: 10px;">
+						<div class="heading">Для ИП</div>
+						<div class="item num1">
+							Заявление в формате word с обязательным указанием адреса эл. почты, <span>на которую Вы будете получать всю информацию от Органа сертификации</span> (во вложении): заполняйте любых 3-х контрагентов обязательно!</div>
+						<div class="item num2">
+							Заявление на сертификацию (скан) с печатью организации и подписями (скан заявления п.1)
+						</div>
+						<div class="item num3">
+							Карточка с реквизитами ИП (word)
+						</div>
+						<div class="item num4">
+							Свидетельство о постановке на учет
+						</div>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</section>
 </body>
-
 </html>
