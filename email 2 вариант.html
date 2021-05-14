@@ -5,7 +5,12 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<title>HTML Template</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
 	<style type="text/css">
+    * {
+      font-family: 'Montserrat', sans-serif;
+    }
+
 		body {
 			width: 100% !important;
 			-webkit-text-size-adjust: 100%;
@@ -49,6 +54,23 @@
       background-position: left center !important;
       background-size: contain !important;
       padding-left: 22px;
+      white-space: nowrap;
+    }
+
+    .main_heading {
+      margin-bottom: 0;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 31px;
+      color: #333333;
+    }
+
+    .main_title {
+      margin-bottom: 0;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 23px;
+      color: #333333;
     }
 
     .footer_link {
@@ -57,6 +79,7 @@
       background-position: left center !important;
       background-size: contain !important;
       padding-left: 22px;
+      white-space: nowrap;
     }
 
     .border_1 {
@@ -77,13 +100,13 @@
 
     .border {
       width: 280px;
-      height: 90px;
+      height: 120px;
       background-color: #FFFFFF;
       border: 1px solid transparent;
       border-radius: 20px;
-      padding-top: 10px;
-      padding-left: 10px;
-      padding-bottom: 10px;
+      padding-top: 12px;
+      padding-left: 12px;
+      padding-bottom: 12px;
       padding-right: 45px;
       background-position: 238px 10px;
       background-size: 26px;
@@ -91,6 +114,53 @@
       font-size: 12px;
       line-height: 17px;
       color: #333333;
+    }
+
+    .option {
+      padding-top: 10px;
+      padding-left: 25px;
+      padding-right: 15px;
+      padding-bottom: 10px;
+      border: 1px solid transparent;
+      border-radius: 20px;
+      background-color: #FFFFFF;
+      font-weight: normal;
+      font-size: 13px;
+      line-height: 16px;
+      color: #333333;
+    }
+
+    .option_special {
+      padding-top: 10px;
+      padding-left: 25px;
+      padding-right: 25px;
+      padding-bottom: 25px;
+      border: 1px solid transparent;
+      background-color: #7359BA;
+      border-radius: 20px;
+      color: #FFFFFF;
+    }
+
+    .price {
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 23px;
+      }
+
+    .span_special {
+      color: #FFFFFF;
+    }
+
+    .stock {
+      margin-top: 0;
+      padding-top: 5px;
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-bottom: 5px;
+      background-color: #B8A6FF;
+      border: 1px solid transparent;
+      border-radius: 20px;
+      white-space: nowrap;
     }
 
     .item {
@@ -178,12 +248,17 @@
 
     .left {
       width: 200px;
+      padding-top: 5px;
+      padding-bottom: 5px;
       text-align: left;
     }
 
     .right {
       width: 100px;
+      padding-top: 5px;
+      padding-bottom: 5px;
       text-align: right;
+      white-space: nowrap;
     }
 	</style>
 </head>
@@ -192,7 +267,7 @@
 	<table cellpadding="0" cellspacing="0" width="100%">
 		<tr>
 			<td>
-				<table style="background: url('https://i.ibb.co/RDTsDVx/Group-42794.png') no-repeat;" cellpadding="0" cellspacing="0" width="600" height="150" align="center">
+				<table style="background: url('https://i.ibb.co/t2dMDPh/1.png') no-repeat; background-size: cover;" cellpadding="0" cellspacing="0" width="600" height="160" align="center">
 					<tr>
 						<td style="padding-top: 20px;">
 							<table cellpadding="0" cellspacing="0" width="600" align="center">
@@ -203,7 +278,7 @@
 										</a>
 									</td>
 									<td style="padding-left: 10px;" width="25%">
-										<a class="header_link" style="background: url('https://i.ibb.co/82jYkyZ/whatsapp-1.png') no-repeat; color: #FFAB01; border-bottom: 1px solid #FFAB01;" href="https://api.whatsapp.com/send/?phone=79213068932&text&app_absent=0">
+										<a class="header_link" style="background: url('https://i.ibb.co/Nn2X3CT/whatsapp-1.png') no-repeat; color: #FFAB01; border-bottom: 1px solid #FFAB01;" href="https://api.whatsapp.com/send/?phone=79213068932&text&app_absent=0">
                       Написать WhatsApp
 										</a>
 									</td>
@@ -226,14 +301,14 @@
 		</tr>
 		<tr>
 			<td align="center">
-        <div style="width: 600px; background: url('https://i.ibb.co/dkm56CR/image.jpg') no-repeat; background-position: left;">
+        <div style="width: 600px; background: url('https://i.ibb.co/dkm56CR/image.jpg') no-repeat; background-position: left top; background-size: 11%;">
           <table cellpadding="0" cellspacing="0" width="600" align="center">
             <tr>
               <td style="font-weight: normal; font-size: 18px; line-height: 23px; color: #333333;" align="center">Коммерческое предложение по услуге</td>
             </tr>
             <tr>
               <td align="center">
-                <img width="406" src="https://i.ibb.co/pQjC3CX/Group-42612.png" alt=""/>
+                <h1 class="main_heading">“Сертификация по стандарту <br> ГОСТ Р ИСО 9001-2015”</h1>
               </td>
             </tr>
             <tr>
@@ -242,7 +317,10 @@
                     <tr>
                       <td>
                         <strong>Здравствуйте, Иван Иванович!</strong>
-                        <p>Стандарт ISO 9001 является базой для других стандартов, таких как ISO 14001 (системы экологического менеджмента), 50001 (системы энергетического менеджмента) и т.д. Сертификат ISO 9001, полученный компанией, в одном из признанных органов по сертификации станет в дальнейшем основным средством продвижения ваших продуктов в зарубежные страны.</p>
+                        <p style="
+                        font-weight: normal;
+                        font-size: 13px;
+                        line-height: 19px;">Стандарт ISO 9001 является базой для других стандартов, таких как ISO 14001 (системы экологического менеджмента), 50001 (системы энергетического менеджмента) и т.д. Сертификат ISO 9001, полученный компанией, в одном из признанных органов по сертификации станет в дальнейшем основным средством продвижения ваших продуктов в зарубежные страны.</p>
                       </td>
                       <td width="200">
                         <img width="200" src="https://i.ibb.co/LkF2G67/image.jpg" alt="">
@@ -257,11 +335,11 @@
 		</tr>
 		<tr>
 			<td align="center">
-        <div style="width: 600px; background: url('https://i.ibb.co/BnjH2TW/Frame-41.jpg') no-repeat;">
+        <div style="width: 600px; padding-bottom: 40px; background: url('https://i.ibb.co/BnjH2TW/Frame-41.jpg') no-repeat;">
           <table cellpadding="0" cellspacing="0" width="600" align="center">
             <tr>
               <td align="center" style="padding-top: 50px;">
-                <img width="360" src="https://i.ibb.co/0h838px/Group-42602-1.png" alt="">
+                <h2 class="main_title">Алгоритм получения сертификата</h2>
               </td>
             </tr>
             <tr>
@@ -273,6 +351,7 @@
                         <tr>
                           <td class="border border_1">
                             Вы присылаете нам комплект документов для проверки вашей компании (сможет ли она получить данный сертификат)
+                            <br>
                             <br>
                             <br>
                             <br>
@@ -289,6 +368,8 @@
                               <strong>(БЕСПЛАТНО!)</strong>
                               <br>
                               <br>
+                              <br>
+                              <br>
                             </td>
                           </td>
                         </tr>
@@ -301,6 +382,7 @@
                         <tr>
                           <td class="border border_3">
                             Если решаете оформляться, то проходите по ссылке, высланной Вам на электронную почту, указанную в заявлении и заполняете 1 часть.
+                            <br>
                             <br>
                             <br>
                           </td>
@@ -324,7 +406,53 @@
             </tr>
             <tr>
               <td align="center" style="padding-top: 20px;">
-                <img width="600" src="https://i.ibb.co/W3jRHxX/Group-42795-2.png" alt="">
+                <table>
+                  <tr>
+                    <td align="center">
+                      <h2 class="main_title" style="padding-left: 25px; margin-bottom: 15px;">Варианты оформления сертификата</h2>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <table width="560" align="center">
+                        <tr>
+                          <td class="option">
+                            <table>
+                              <tr>
+                                <td>
+                                  <span class="price">49 000 ₽</span>
+                                  <div>1 сертификат</div>
+                                  <p>СТО <br> 03.080.02033720.1-2020 «Квалификация участников закупки»</p>
+                                  <br>
+                                  <br>
+                                  <br>
+                                  <br>
+                                  <br>
+                                </td>
+                                <td>
+                                  <span class="price">53 000 ₽</span>
+                                  <div>2 сертификата</div>
+                                  <p>СТО <br> 03.080.02033720.1-2020 «Квалификация участников закупки»</p>
+                                  <p>ИСО 9001 <br>
+                                    (или 14001; 18001)</p>
+                                    <br>
+                                    <br>
+                                </td>
+                                <td class="option_special">
+                                  <p class="stock">САМЫЙ ВЫГОДНЫЙ</p>
+                                  <span class="price span_special">60 000 ₽</span>
+                                  <div>4 сертификата</div>
+                                  <p>СТО <br> 03.080.02033720.1-2020 «Квалификация участников закупки»</p>
+                                  <p>ИСМК (ISO 9001 + <br> ISO14001 + ISO18001)</p>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
               </td>
             </tr>
           </table>
@@ -336,12 +464,12 @@
 				<table cellpadding="0" cellspacing="0" width="600" align="center">
 					<tr>
 						<td align="center" style="padding-top: 50px;">
-							<img width="437" src="https://i.ibb.co/cJF9KBs/Group-42651.png" alt="Документы, необходимые для резолюции"/>
+              <h2 class="main_title">Документы, необходимые для резолюции</h2>
 						</td>
 					</tr>
           <tr>
             <td>
-              <div style="margin-top: 20px; padding-bottom: 130px; background: url('https://i.ibb.co/t8nqyZR/image.png') no-repeat; background-position: bottom;
+              <div style="margin-top: 20px; padding-bottom: 130px; background: url('https://i.ibb.co/ZLxVcpc/Combined-Shape.png') no-repeat; background-position: bottom;
               background-size: contain;">
                 <table width="562" align="center">
                   <tr>
@@ -407,7 +535,7 @@
                 <img width="180" src="https://i.ibb.co/fkGGhf8/fatrim-1.png" alt="">
               </td>
               <td width="357">
-                <img width="220" src="https://i.ibb.co/98DYLfQ/Group-42651-1.png" alt="">
+                <h2 class="main_title" style="white-space: nowrap;">Наша аккредитация</h2>
                 <p style="color: #333333;">«Петроконсалт» является официальным представителем СДС «МСП СТАНДАРТ».</p>
                 <p style="color: #333333;">
                   ООО "ЦС МСП" является официальным сертификационным центром. Система добровольной сертификации «МСП СТАНДАРТ». Зарегистрирована в Федеральном агентстве по техническому регулированию и метрологии (РОССТАНДАРТ) под № РОСС RU.З2071.04МЕС0
@@ -421,11 +549,11 @@
 		</tr>
 		<tr>
 			<td align="center">
-        <div style="width: 600px; padding-top: 40px; padding-bottom: 30px; background: url('https://i.ibb.co/t8RYRGC/Frame-41-1.jpg') no-repeat;">
+        <div style="width: 600px; padding-top: 30px; padding-bottom: 40px; background: url('https://i.ibb.co/t8RYRGC/Frame-41-1.jpg') no-repeat; background-size: cover; background-position-x: center;">
           <table cellpadding="0" cellspacing="0" width="600" align="center">
             <tr>
               <td align="center" style="padding-bottom: 20px;">
-                <img width="323" src="https://i.ibb.co/dD4jZbm/Group-42602-2.png" alt="">
+                <h2 class="main_title">Полный перечень наших услуг</h2>
               </td>
             </tr>
             <tr>
@@ -585,16 +713,16 @@
                               <div>
                                 <table>
                                   <tr>
-                                    <td class="left">Сертификация ИСО <br> (Остальные направления)</td>
-                                    <td class="right"><br> от <span>8 500 ₽</span></td>
+                                    <td class="left">Сертификация ИСО <br> (Остальные <br> направления)</td>
+                                    <td class="right"><br><br> от <span>8 500 ₽</span></td>
                                   </tr>
                                 </table>
                               </div>
                               <div>
                                 <table>
                                   <tr>
-                                    <td class="left">Сертификация СТО КУЗ</td>
-                                    <td class="right">от <span>49 000 ₽</span></td>
+                                    <td class="left">Сертификация <br> СТО КУЗ</td>
+                                    <td class="right"><br> от <span>49 000 ₽</span></td>
                                   </tr>
                                 </table>
                               </div>
@@ -611,8 +739,8 @@
                               <div>
                                 <table>
                                   <tr>
-                                    <td class="left">Декларация соответствия</td>
-                                    <td class="right">от <span>15 000 ₽</span></td>
+                                    <td class="left">Декларация <br> соответствия</td>
+                                    <td class="right"><br> от <span>15 000 ₽</span></td>
                                   </tr>
                                 </table>
                               </div>
@@ -680,8 +808,8 @@
                               <div>
                                 <table>
                                   <tr>
-                                    <td class="left">Обучение рабочим специальностям <br> (базовый разряд)</td>
-                                    <td class="right"><br> от <span>4 000 ₽</span></td>
+                                    <td class="left">Обучение рабочим <br> специальностям <br> (базовый разряд)</td>
+                                    <td class="right"><br><br> от <span>4 000 ₽</span></td>
                                   </tr>
                                 </table>
                               </div>
@@ -696,8 +824,8 @@
                               <div>
                                 <table>
                                   <tr>
-                                    <td class="left">Охрана труда на высоте</td>
-                                    <td class="right">от <span>3 000 ₽</span></td>
+                                    <td class="left">Охрана труда <br> на высоте</td>
+                                    <td class="right"><br> от <span>3 000 ₽</span></td>
                                   </tr>
                                 </table>
                               </div>
@@ -712,8 +840,8 @@
                               <div>
                                 <table>
                                   <tr>
-                                    <td class="left">Повышение квалификации</td>
-                                    <td class="right">от <span>3 000 ₽</span></td>
+                                    <td class="left">Повышение <br> квалификации</td>
+                                    <td class="right"><br> от <span>3 000 ₽</span></td>
                                   </tr>
                                 </table>
                               </div>
@@ -730,7 +858,7 @@
                               <div>
                                 <table>
                                   <tr>
-                                    <td class="left">Электробезопасность I-IV <br> группа ДО 1000В</td>
+                                    <td class="left">Электробезопасность <br> I-IV группа ДО 1000В</td>
                                     <td class="right"><br> от <span>7 000 ₽</span></td>
                                   </tr>
                                 </table>
@@ -738,7 +866,7 @@
                               <div>
                                 <table>
                                   <tr>
-                                    <td class="left">Электробезопасность IV -V <br> группа ДО и СВЫШЕ 1000В</td>
+                                    <td class="left">Электробезопасность <br> IV -V группа <br> ДО и СВЫШЕ 1000В</td>
                                     <td class="right"><br> от <span>8 000 ₽</span></td>
                                   </tr>
                                 </table>
@@ -746,7 +874,7 @@
                               <div>
                                 <table>
                                   <tr>
-                                    <td class="left">Аттестация по <br> теплоэнергоустановкам от</td>
+                                    <td class="left">Аттестация по <br> теплоэнергоустановкам</td>
                                     <td class="right"><br> от <span>8 000 ₽</span></td>
                                   </tr>
                                 </table>
@@ -754,8 +882,8 @@
                               <div>
                                 <table>
                                   <tr>
-                                    <td class="left">Аттестация по неразрушающему <br> контролю (ВИК)</td>
-                                    <td class="right"><br> от <span>20 000 ₽</span></td>
+                                    <td class="left">Аттестация <br> по неразрушающему <br> контролю (ВИК)</td>
+                                    <td class="right"><br><br> от <span>20 000 ₽</span></td>
                                   </tr>
                                 </table>
                               </div>
@@ -789,7 +917,7 @@
                       8 (800) 301 08 02
 										</a>
 									</td>
-									<td width="20"></td>
+									<td width="5"></td>
 									<td width="120">
 										<a class="footer_link" style="background: url('https://i.ibb.co/LJQDqXM/ic-email-24px-1.png') no-repeat;" href="mailto:info@petroconsalt.ru">
                       info@petroconsalt.ru
@@ -798,11 +926,11 @@
 								</tr>
 								<tr>
 									<td width="130" style="padding-right: 10px; padding-top: 10px;">
-										<a class="footer_link" style="background: url('https://i.ibb.co/82jYkyZ/whatsapp-1.png') no-repeat; color: #FFAB01; border-bottom: 1px solid #FFAB01;" href="https://api.whatsapp.com/send/?phone=79213068932&text&app_absent=0">
+										<a class="footer_link" style="background: url('https://i.ibb.co/Nn2X3CT/whatsapp-1.png') no-repeat; color: #FFAB01; border-bottom: 1px solid #FFAB01;" href="https://api.whatsapp.com/send/?phone=79213068932&text&app_absent=0">
                       Написать Whatsapp
 										</a>
 									</td>
-									<td width="20"></td>
+									<td width="5"></td>
 									<td width="10" style="padding-top: 10px; padding-right: 30px;">
 										<a class="footer_link" style="background: url('https://i.ibb.co/Mh81Dhw/internet-1-1.png') no-repeat;" href="https://petroconsalt.ru/">
                       petroconsalt.ru
